@@ -45,7 +45,6 @@ body{
     height: 53%;
     margin: 8px -184px 23px 35px;
 }
-
 .nav-left span a{
     font-size: 1.5em;
     margin: 25px 10px -17px -13px;
@@ -361,7 +360,7 @@ body{
     padding: 1px;
     color: #106fd5;
     font-size: 40px;
-
+    
 }
 
 
@@ -369,7 +368,8 @@ body{
     display: block;
     margin-top: 5px;
     color: black;
-    font-size: 15px;
+    font-size: 13px;
+    list-style: none;
 }
 
 

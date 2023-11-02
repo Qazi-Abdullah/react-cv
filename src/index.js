@@ -18,7 +18,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaintBrush } from '@fortawesome/free-solid-svg-icons'
 import { BiController } from 'react-icons/bi';
 
-import { faFacebook, faWhatsapp, faTwitter, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faWhatsapp, faYoutube, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 
@@ -27,6 +27,11 @@ import MultiHeadline from './multiheadline'
 
 
 function Hi(){
+
+  const submithandler = async (e) => {
+    e.preventDefault()
+    console.log("result" , result)
+  }
    return <div>
     <main className="container">
        <nav className="navbar">
@@ -128,32 +133,59 @@ function Hi(){
     <h2>SOCIAL MEDIA</h2>
     <hr />
     <div className="social-icons">
-        <div className="icon">
-      
+  <div className="icon">
+    <a href="https://www.facebook.com/smerty.abdullah">
+      <FontAwesomeIcon icon={faFacebook} />
+      <span><b>Facebook</b></span>
+    </a>
+  </div>
 
-            <FontAwesomeIcon icon={faFacebook} />
-            <span>Facebook</span>
-        </div>
-        <div className="icon">
-            <FontAwesomeIcon icon={faWhatsapp} />
-            <span>WhatsApp</span>
-        </div>
-        <div className="icon">
-            <FontAwesomeIcon icon={faTwitter} />
-            <span>Twitter</span>
-        </div> <br />
-        <div className="icon">
-            <FontAwesomeIcon icon={faLinkedin} />
-            <span>LinkedIn</span>
-        </div>
-        <div className="icon">
-            <FontAwesomeIcon icon={faInstagram} />
-            <span>Instagram</span>
-        </div>
-        <div className="icon">
-            <FontAwesomeIcon icon={faGithub} />
-            <span>GitHub</span>
-        </div>
+
+  <div className="social-icons">
+  <div className="icon">
+    <a href="https://api.whatsapp.com/send?phone=03142135944">
+      <FontAwesomeIcon icon={faWhatsapp} />
+      <span><b>WhatsApp</b></span>
+    </a>
+  </div>
+</div>
+<div className="social-icons">
+  <div className="icon">
+    <a href="https://www.youtube.com/user/your-channel-username">
+      <FontAwesomeIcon icon={faYoutube} />
+      <span><b>YouTube</b></span>
+    </a>
+  </div>
+</div>
+
+
+        <div className="social-icons">
+  <div className="icon">
+    <a href="https://www.linkedin.com/in/your-profile-url">
+      <FontAwesomeIcon icon={faLinkedin} />
+      <span><b>LinkedIn</b></span>
+    </a>
+  </div>
+</div>
+
+<div className="social-icons">
+  <div className="icon">
+    <a href="https://www.instagram.com/your-username">
+      <FontAwesomeIcon icon={faInstagram} />
+      <span><b>Instagram</b></span>
+    </a>
+  </div>
+</div>
+
+<div className="social-icons">
+  <div className="icon">
+    <a href="https://github.com/your-Qazi-Abdullah">
+      <FontAwesomeIcon icon={faGithub} />
+      <span><b>GitHub</b></span>
+    </a>
+  </div>
+</div>
+
     </div>
 </div>
         </div>
@@ -220,7 +252,7 @@ function Hi(){
             <label>Message:</label>
             <textarea></textarea>
         </div>
-        <button className='btn' type="submit">Submit</button>
+        <button className='btn' type="submithandler">Submit</button>
     </form>
 </div>
 
